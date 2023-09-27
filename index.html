@@ -1,47 +1,102 @@
 <!DOCTYPE html>
-<html lang="AR" dir="rtl">   
-
+<html lang="AR" lang="EN">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Aman is a mental health website that provides resources and information on mindfulness, meditation, and mental wellness.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أمــان</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
-
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/animate-min.css">
     <link rel="stylesheet" href="./styles/animate.css">
       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap" rel="stylesheet">
+    
 </head>
 
-  <body>
-    <script src="main.js"></script>
-    <header>
-        <h2><a href="#" class="logo">أمـــــان</a></h2>
-        <!-- <img src="images/logo.png" alt="logo"  class="logom"> -->
-        <ul>
-            <li><a href="#" class="active">الرئيسية</a></li>
-            <li><a href="#">توعية</a></li>
-            <li><a href="#">الموارد والدعم</a></li>
-            <li><a href="#">التسجيل</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="main">
-        <video autoplay muted loop id="myVideo">
-            <source src="assets/video_2023-09-03_16-01-20.mp4" type="video/mp4">
-            
-          </video>
-          
-    </section>
 
-                <!-- <h2 class="section-heading about-heading">نبذه عنا</h2>
+    
+ 
+  <style>
+    /* Navbar styles */
+  .top-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Change to your desired background color */
+    height: 80px; /* Adjust to your desired height */
+    padding: 0 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  /* Navbar brand styles */
+  .navbar-brand {
+    font-size: 28px; /* Change to your desired font size */
+    font-weight: 700; /* Adjust to your desired font weight */
+    color: #333; /* Change to your desired text color */
+    text-decoration: none;
+  }
+  
+  /* Navbar menu styles */
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-item {
+    margin-right: 20px; /* Adjust the spacing between menu items */
+  }
+  
+  .menu-item:last-child {
+    margin-right: 0; /* Remove margin from last menu item */
+  }
+  
+  .menu-item a {
+    font-size: 16px; /* Change to your desired font size */
+    font-weight: 500; /* Adjust to your desired font weight */
+    color: #333; /* Change to your desired text color */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out; /* Add a smooth color transition */
+  }
+  
+  .menu-item a:hover {
+    color: #0077ff; /* Change to your desired hover color */
+  }
+ 
+
+
+        .logo  {
+            position: fixed;
+            height: 80px;
+            width: 100px;
+            margin: -10px 0px 0px -40px;
+        }
+  </style>
+  <body>
+  
+  
+        
+  
+  
+  <nav class="top-navbar">
+    <a href="#" class="navbar-brand">Guardian Angle</a>
+    <img src="assets/logo.png" alt="logo" height="175" width="500" class="logo">
+    <ul class="navbar-menu">
+      
+      <li class="menu-item"><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+<img src="assets/main.png" alt="main imag" width="100%">
+  
+
+    <section class="about-us">
+        <div class="container">
+            <div class="abt-contain">
+                <h2 class="section-heading about-heading">نبذه عنا</h2>
                 <p class="section-subheadin">نحن موقع يولي اهتماماً كبيراً بتوعية المجتمع
                  حول المشاكل النفسية والعقلية. نسعى لمساعدة كل من يرغب في تقديم الدعم
                   لشخص مقرب يعاني من مشكلة، ولكنه لا يعرف الطريقة المناسبة. هنا، نقدم الارشاد
@@ -176,25 +231,28 @@
                         <li><a href="tel:20818102">الخط الساخن للمجلس القومي للصحة النفسية</a>
                     </ul>
                 </div>
-                <div class="resource-category crisis">
-                    <h3>الحالات الطارئة</h3>
-                    <ul>
-                        <li><a href="tel:16000">الخط الساخن لنجدة الطفل</a>
-                        </li>
-                        <li><a href="tel: 0220816831">  لتلقي الاستقسارات النفسية والدعم النفسي</a></li>
-                        <li><a href="tel:08008880700">الخط الساخن لنجدة من لديهم افكار انتحارية</a></li>
-                    </ul>
+            </div>       
+            <div class="col-lg-3 col-md-6 service-block">
+                <div class="inner-box wow animated " data-wow-delay="0.1s" data-wow-duration="1500ms">
+                    <div class="icon"><i class="icon-hospital"></i></div>
+                    <h5>الحالات الطارئة</h5>
+                    <h4><ul>
+                        <li><a href="tel:16000">الخط الساخن لنجدة الطفل</a></li><br>
+                        <li><a href="tel: 0220816831">  لتلقي الاستقسارات النفسية والدعم النفسي</a></li><br>
+                        <li><a href="tel:08008880700">الخط الساخن لنجدة من لديهم افكار انتحارية</a></li><br>
+                    </ul> </h4>
                 </div>
+            </div>       
+            
             </div>
-           
         </div>
-    </section>
-
-
+    </div>
+  </section>
 
 
 
     <footer>
+        
         <div class="container foot-contain">
             <div class="row">
                 <div class="col-md-6 col-lg-4 form-contain">
@@ -226,10 +284,16 @@
                 </div>
             </div>
         </div>
+
+
+
+        
     </footer>
 
+    <script src='./styles/bar/assets/js/main.js'></script>
     <script src='./scripts/jquery-min.js'></script>
     <script src="./scripts/jquery-waypoints.js"></script>
+    <script src="./scripts/wow.js"></script>
     <script src="./scripts/app.js"></script>
 
 </body>
